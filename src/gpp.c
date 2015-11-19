@@ -2793,10 +2793,3 @@ int MainProgram(int argc, char **argv)
   fclose(C->out->f);
   return EXIT_SUCCESS;
 }
-
-
-int main(int argc,char **argv)
-{
-  return MainProgram(argc, argv);
-}
-

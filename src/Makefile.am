@@ -11,7 +11,7 @@
 # PURPOSE.
 
 bin_PROGRAMS = gpp
-gpp_SOURCES = gpp.c
+gpp_SOURCES = gpp_main.c gpp.c
 
 lib_LIBRARIES = libgpp.a
 libgpp_a_SOURCES = gpp.c

@@ -75,7 +75,7 @@ am_libgpp_a_OBJECTS = gpp.$(OBJEXT)
 libgpp_a_OBJECTS = $(am_libgpp_a_OBJECTS)
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
-am_gpp_OBJECTS = gpp.$(OBJEXT)
+am_gpp_OBJECTS = gpp_main.$(OBJEXT) gpp.$(OBJEXT)
 gpp_OBJECTS = $(am_gpp_OBJECTS)
 gpp_LDADD = $(LDADD)
 DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)
@@ -170,7 +170,7 @@ sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
 target_alias = @target_alias@
-gpp_SOURCES = gpp.c
+gpp_SOURCES = gpp_main.c gpp.c
 lib_LIBRARIES = libgpp.a
 libgpp_a_SOURCES = gpp.c
 all: all-am
@@ -273,6 +273,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gpp.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gpp_main.Po@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	if $(COMPILE) -MT $@ -MD -MP -MF "$(DEPDIR)/$*.Tpo" -c -o $@ $<; \

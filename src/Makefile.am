@@ -12,3 +12,6 @@
 
 bin_PROGRAMS = gpp
 gpp_SOURCES = gpp.c
+
+lib_LIBRARIES = libgpp.a
+libgpp_a_SOURCES = gpp.c

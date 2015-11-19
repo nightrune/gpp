@@ -1,0 +1,13 @@
+Makefile
+*.o
+*.exe
+*.a
+
+README
+autom4te.cache/
+config.h
+config.h.in~
+config.log
+config.status
+src/.deps/
+stamp-h1

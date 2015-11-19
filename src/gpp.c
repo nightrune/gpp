@@ -2782,7 +2782,7 @@ void construct_include_directive_marker(char **include_directive_marker,
 }
 
 
-int main(int argc,char **argv)
+int MainProgram(int argc, char **argv)
 {
   initthings(argc,argv);
   /* The include marker at the top of the file */
@@ -2792,5 +2792,11 @@ int main(int argc,char **argv)
   ProcessContext();
   fclose(C->out->f);
   return EXIT_SUCCESS;
+}
+
+
+int main(int argc,char **argv)
+{
+  return MainProgram(argc, argv);
 }
 
